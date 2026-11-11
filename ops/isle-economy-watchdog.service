@@ -1,0 +1,11 @@
+[Unit]
+Description=Check the Isle Economy scheduler
+After=docker.service
+
+[Service]
+Type=oneshot
+RuntimeDirectory=isle-economy-watchdog
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+ExecStart=/usr/bin/python3 /opt/isle-economy/ops/watchdog.py
+TimeoutStartSec=55s

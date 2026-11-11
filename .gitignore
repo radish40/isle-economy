@@ -1,0 +1,14 @@
+/data/
+/node_modules/
+/research/
+/vendor/world-rules.mjs
+*.env
+*.env.*
+!.env.example
+*.cookie
+*.pem
+*.key
+*.sqlite*
+*.jsonl
+*.tar.gz
+__pycache__/

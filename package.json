@@ -1,0 +1,14 @@
+{
+  "name": "isle-economy",
+  "private": true,
+  "license": "MIT-0",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file-if-exists=runtime.env src/server.mjs",
+    "test": "node --test test/finance.test.mjs",
+    "test:rules": "node --test test/*.test.mjs",
+    "rules:install": "node scripts/install-rules.mjs"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "acorn": "8.15.0" }
+}

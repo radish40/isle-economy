@@ -1,0 +1,11 @@
+.git
+data
+node_modules
+research
+test
+ops
+*.env
+*.env.*
+*.cookie
+*.sqlite*
+*.jsonl
